@@ -44,12 +44,12 @@ router.get('/', (req, res) => {
   })
   .catch(error => {
     console.log('error getting events!', error);
-    res.sendStatus(500);
+    res.sendStatus(500);``
   })
   }
 });
 
-router.get('/specific', rejectUnauthenticated, (req, res) => {
+router.get('/specific', (req, res) => {
 
   console.log("in get specific event route", req.query);
 
